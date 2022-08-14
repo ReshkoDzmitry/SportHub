@@ -1,0 +1,174 @@
+.opinionCardWrapper {
+  width: 1320px;
+  height: 289px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  .opinionCardPC {
+    width: 1320px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .opinionCard {
+      width: 300px;
+      height: 300px;
+
+      .photoBlock {
+        display: flex;
+        justify-content: center;
+
+        .photoWrapper {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+        }
+
+        .quotesWrapper {
+          width: 48px;
+          height: 48px;
+          background-color: red;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          left: -60px;
+          top: 0;
+
+          .vector {
+            width: 22px;
+            height: 14.44px;
+          }
+        }
+      }
+
+      .nameWrapper {
+        margin: 66px 0 6px 0;
+
+        h6 {
+          margin: 0;
+          font-weight: 700;
+          font-size: 18px;
+          color: #000000;
+        }
+      }
+    }
+
+    .postWrapper {
+
+      p {
+        font-weight: 400;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+
+    .descriptionWrapper {
+
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+
+
+  .opinionCardMobile {
+    display: none;
+  }
+}
+
+
+@media(max-width: 1440px) {
+  .opinionCardWrapper {
+    width: 768px;
+    height: 560px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media(max-width: 320px) {
+  .opinionCardWrapper {
+    width: 320px;
+    height: 270px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .opinionCardPC {
+      display: none;
+    }
+
+    .opinionCardMobile {
+      display: block;
+
+      .photoBlock {
+        display: flex;
+        justify-content: center;
+
+        .photoWrapper {
+          width: 100px;
+          height: 100px;
+          position: absolute;
+        }
+
+        .quotesWrapper {
+          width: 48px;
+          height: 48px;
+          background-color: red;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: relative;
+          left: -60px;
+          top: 0;
+
+          .vector {
+            width: 22px;
+            height: 14.44px;
+          }
+        }
+      }
+
+      .nameWrapper {
+        margin: 66px 0 6px 0;
+
+        h6 {
+          margin: 0;
+          font-weight: 700;
+          font-size: 18px;
+          color: #000000;
+        }
+      }
+    }
+
+    .postWrapper {
+
+      p {
+        font-weight: 400;
+        font-size: 11px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+    }
+
+    .descriptionWrapper {
+
+      p {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}

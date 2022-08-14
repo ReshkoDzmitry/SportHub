@@ -1,0 +1,319 @@
+@import "src/common/variables";
+@import "src/common/exends";
+
+
+.menuWrapper {
+  z-index: 9;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F01B0D;
+  height: 640px;
+  width: 100%;
+  position: absolute;
+  transition: 3s;
+
+  .menuContainer {
+    @extend .container;
+
+    .menuHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 22px 0 40px 0;
+
+      a {
+
+        img {
+          width: 88px;
+          height: 20px;
+        }
+      }
+
+      div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background-color: #FFFFFF;
+
+        svg:hover {
+          cursor: pointer;
+
+          rect {
+            fill: red;
+          }
+
+          path {
+            fill: #FFFFFF;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 40px 0;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 20px;
+        width: 170px;
+
+        a {
+          color: #FFFFFF;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+          padding-left: 10px;
+        }
+
+        a:hover {
+          color: black;
+        }
+
+        a:hover::before {
+          color: black;
+          content: "▣   ";
+          font-size: 16px;
+        }
+      }
+
+      .menu a {
+        margin: 0 0 32px 0;
+      }
+
+      .sport a {
+        text-transform: none;
+        margin: 0 0 14px 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      .aboutProject a {
+        margin: 0 0 24px 0;
+      }
+    }
+
+    .social {
+
+      a {
+        margin: 12px;
+
+        svg:hover {
+
+          rect {
+            fill: black;
+          }
+
+          path {
+            fill: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+
+  .menuFooter {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+
+    .advertising {
+
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        margin: 0 0 14px 0;
+        color: #FFFFFF;
+        opacity: 0.7;
+      }
+
+      a {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        display: flex;
+      }
+    }
+
+    .subscription {
+      text-align: left;
+
+      p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        opacity: 0.7;
+        margin: 0 0 14px 0;
+      }
+
+      input {
+        width: 300px;
+        height: 28px;
+        background-color: inherit;
+        border: none;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        margin: 0 20px 0 0;
+        outline: none;
+        padding: 0 10px;
+      }
+
+      button {
+        width: 201px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 8px rgba(3, 0, 172, 0.1);
+        border-radius: 100px;
+        border: none;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: rgba(192, 22, 10, 1);
+        cursor: pointer;
+        transition: .3s;
+      }
+
+      button:hover {
+        background: black;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menuWrapper {
+
+    .menuContainer {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    .menuHeader {
+      padding: 0 10px;
+    }
+
+    .menuFooter {
+      padding: 0 10px;
+
+      .subscription {
+
+        input {
+          width: 150px;
+        }
+
+        button {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 320px) {
+  .menuWrapper {
+    height: 750px;
+
+    .menuContainer {
+      width: 320px;
+      margin: 0 auto;
+
+      .menuHeader {
+        display: flex;
+        margin: 15px 0 20px 0;
+      }
+
+      .navigation {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0 0 20px 0;
+
+        div {
+          flex-direction: column;
+          margin: 20px 10px;
+          width: 120px;
+
+          a {
+            font-size: 14px;
+            padding-left: 10px;
+            text-align: left;
+          }
+
+          a:hover::before {
+            font-size: 0;
+          }
+        }
+
+        .menu a {
+          margin: 0 0 10px 0;
+        }
+
+        .sport a {
+          margin: 0 0 10px 0;
+          font-size: 14px;
+        }
+
+        .aboutProject a {
+          margin: 0 0 10px 0;
+        }
+      }
+
+
+
+
+      .menuFooter {
+        flex-direction: column;
+
+        .advertising {
+
+          p {
+            font-size: 14px;
+            margin: 0 0 10px 0;
+            opacity: 0.7;
+            text-align: left;
+          }
+
+          a {
+            font-size: 12px;
+            color: #FFFFFF;
+            margin: 0 0 20px 0;
+          }
+        }
+
+        .subscription {
+          text-align: left;
+
+          p {
+            font-size: 14px;
+            margin: 0 0 5px 0;
+          }
+
+          input {
+            width: 270px;
+            margin: 0 0 20px 0;
+          }
+
+          button {
+            width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,216 @@
+@import "src/common/variables";
+@import "src/common/exends";
+
+.headerWrapper {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/header.png);
+  margin: 0 auto;
+  height: 580px;
+  background-position: 0 -120px;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+
+  .container {
+    @extend .container;
+
+    .titleWrapper {
+      height: 500px;
+      left: 640px;
+      bottom: 194px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+
+      .title {
+        font-weight: 700;
+        font-size: 40px;
+        margin: 14px 0;
+      }
+    }
+
+    .titleWrapper p {
+      text-align: left;
+      color: #FFFFFF;
+      font-weight: 400;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .titleWrapper h1 {
+      text-align: left;
+      color: #FFFFFF;
+    }
+
+    .hashTagHeader {
+      @extend .hashTag;
+      color: #FFFFFF;
+    }
+  }
+
+  .menuWrapper {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .logo {
+      margin-right: 440px;
+    }
+
+    .menuItems {
+      display: flex;
+      font-size: 12px;
+      font-weight: 400;
+
+      .item {
+        margin-right: 50px;
+        color: #FFFFFF;
+        transition: .3s;
+        border-bottom: 1px solid rgba(240, 27, 13, 0);
+      }
+
+      .item:hover {
+        margin-right: 50px;
+        color: #F01B0D;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #F01B0D;
+      }
+    }
+
+    .buttonMenuWrapper {
+      width: 48px;
+      height: 11px;
+      position: relative;
+      cursor: pointer;
+
+
+      .buttonMenu {
+        height: 1.3px;
+        background-color: #FFFFFF;
+        display: block;
+        transition: .3s;
+
+        .effectMenu {
+          color: rgba(255, 255, 255, 0);
+          transition: .3s;
+          font-size: 12px;
+        }
+      }
+
+      .buttonMenu::after {
+        position: absolute;
+        content: '';
+        height: 1.3px;
+        width: 100%;
+        background: #FFFFFF;
+        display: block;
+        bottom: 0;
+        transition: .3s
+      }
+    }
+
+    .buttonMenuWrapper:hover {
+      width: 48px;
+      height: 11px;
+      position: relative;
+
+      .buttonMenu {
+        height: 17px;
+        width: 48px;
+        background-color: #F01B0D;
+        display: block;
+
+
+        .effectMenu {
+          color: #FFFFFF;
+          transition: 1s;
+        }
+      }
+
+      .buttonMenu::after {
+        background: rgba(240, 27, 13, 0.02);
+        display: block;
+        bottom: -5px;
+        transition: .3s;
+
+
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1440px) {
+  .headerWrapper {
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    .container {
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    .menuWrapper {
+
+      .logo {
+        padding-left: 20px;
+      }
+
+      .menuItems {
+        display: none;
+      }
+
+      .buttonMenuWrapper {
+        left: -30px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 320px) {
+
+  .headerWrapper {
+    height: 205px;
+    background-repeat: no-repeat;
+    background-position: -60px 0px;
+    background-size: 410px 245px;
+
+    .container {
+      width: 320px;
+      margin: 0 auto;
+
+      .titleWrapper {
+        height: 0;
+        margin: 80px 20px;
+
+        .title {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 23px;
+          margin: 14px 0;
+        }
+      }
+    }
+
+    .menuWrapper {
+      padding-top: 20px;
+
+      .logo {
+        padding-left: 20px;
+        margin-right: 0;
+      }
+
+      .menuItems {
+        display: none;
+      }
+
+      .buttonMenuWrapper {
+        left: -30px;
+
+      }
+    }
+  }
+}

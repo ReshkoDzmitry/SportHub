@@ -1,0 +1,81 @@
+@import "src/common/variables";
+@import "src/common/exends";
+
+.navigationWrapper {
+  background:$color-accent;
+  height: 60px;
+
+  .navigationContainer {
+    @extend .container;
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+
+    .navigationItems {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 15px;
+
+      .navigationItem {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0);
+        transition: .3s;
+      }
+
+      .navigationItem:hover {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 25px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+        padding-bottom: 5px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 1440px) {
+  .navigationWrapper {
+
+    .navigationContainer {
+      width: 768px;
+      margin: 0 auto;
+
+      .navigationItems {
+        flex-wrap: wrap;
+        height: 45px;
+      }
+    }
+  }
+}
+
+
+@media(max-width: 320px) {
+  .navigationWrapper {
+    padding: 10px 0;
+
+    .navigationContainer {
+      width: 320px;
+      margin: 0 auto;
+
+      .navigationItems {
+        justify-content: space-between;
+        height: 55px;
+
+        .navigationItem {
+          margin: 0 6px;
+        }
+
+        .navigationItem:hover {
+          margin: 0 6px;
+        }
+      }
+    }
+  }
+}
