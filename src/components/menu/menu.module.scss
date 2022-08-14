@@ -5,7 +5,7 @@
 .menuWrapper {
   z-index: 9;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #F01B0D;
-  height: 640px;
+  height: 680px;
   width: 100%;
   position: absolute;
   transition: 3s;
@@ -17,7 +17,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin: 22px 0 40px 0;
+      margin: 22px 0 70px 0;
 
       a {
 
@@ -198,7 +198,7 @@
   .menuWrapper {
 
     .menuContainer {
-      width: 768px;
+      max-width: 768px;
       margin: 0 auto;
     }
 
@@ -229,7 +229,7 @@
     height: 750px;
 
     .menuContainer {
-      width: 320px;
+      max-width: 320px;
       margin: 0 auto;
 
       .menuHeader {
@@ -272,9 +272,6 @@
           margin: 0 0 10px 0;
         }
       }
-
-
-
 
       .menuFooter {
         flex-direction: column;

@@ -5,8 +5,8 @@
   background: $color-accent;
   height: 265px;
 
-  .container {
-    width: 1400px;
+  .footerContainer {
+    max-width: 1400px;
     margin: 0 auto;
 
     .footerWrapper {
@@ -144,8 +144,8 @@
 
   .footerBg {
 
-    .container {
-      width: 768px;
+    .footerContainer {
+      max-width: 768px;
       margin: 0 auto;
 
       .footerWrapper {
@@ -161,8 +161,8 @@
   .footerBg {
     height: 543px;
 
-    .container {
-      width: 320px;
+    .footerContainer {
+      max-width: 320px;
       margin: 0 auto;
 
       .footerWrapper {

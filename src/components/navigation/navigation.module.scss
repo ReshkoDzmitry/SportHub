@@ -42,14 +42,18 @@
 
 @media(max-width: 1440px) {
   .navigationWrapper {
+    height: 100px;
 
     .navigationContainer {
-      width: 768px;
+      max-width: 768px;
       margin: 0 auto;
+      height: 100px;
+
 
       .navigationItems {
         flex-wrap: wrap;
-        height: 45px;
+        height: 80px;
+        align-items: center
       }
     }
   }
@@ -61,7 +65,7 @@
     padding: 10px 0;
 
     .navigationContainer {
-      width: 320px;
+      max-width: 320px;
       margin: 0 auto;
 
       .navigationItems {

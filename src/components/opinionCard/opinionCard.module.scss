@@ -1,12 +1,12 @@
 .opinionCardWrapper {
-  width: 1320px;
+  max-width: 1320px;
   height: 289px;
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 
   .opinionCardPC {
-    width: 1320px;
+    max-width: 1320px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -86,7 +86,7 @@
 
 @media(max-width: 1440px) {
   .opinionCardWrapper {
-    width: 768px;
+    max-width: 768px;
     height: 560px;
     display: flex;
     justify-content: space-around;
@@ -97,7 +97,7 @@
 
 @media(max-width: 320px) {
   .opinionCardWrapper {
-    width: 320px;
+    max-width: 320px;
     height: 270px;
     display: flex;
     justify-content: space-around;

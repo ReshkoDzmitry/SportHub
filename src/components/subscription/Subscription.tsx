@@ -1,16 +1,9 @@
 import React from 'react';
 import s from './subscription.module.scss';
-import vk from './vk.png';
-import facebook from './facebook.png';
-import instagram from './instagram.png';
-import youtube from './youtube.png';
-import telegram from './telegram.png';
-import tiktok from './tiktok.png';
-import twitter from './twitter.png';
 
 const Subscription = () => {
     return (
-        <div className={s.container}>
+        <div className={s.subscriptionContainer}>
             <div className={s.socialSubscriptionWrapper}>
                 <div className={s.socialWrapper}>
                     <h5 className={s.title}>СОЦСЕТИ</h5>

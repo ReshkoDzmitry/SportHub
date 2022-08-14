@@ -16,11 +16,10 @@
 
 @media(max-width: 1440px) {
   .lastContainer {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
 
     .titleWrapper {
-
       h3 {
         padding-left: 10px;
       }
@@ -31,7 +30,7 @@
 
 @media(max-width: 320px) {
   .lastContainer {
-    width: 320px;
+    max-width: 320px;
     margin: 0 auto;
 
     .titleWrapper {

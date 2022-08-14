@@ -6,7 +6,7 @@ import prasLogo from './prasLogo.png';
 const Footer = () => {
     return (
         <div className={s.footerBg}>
-            <div className={s.container}>
+            <div className={s.footerContainer}>
                 <div className={s.footerWrapper}>
                     <div className={s.footerUpBlock}>
                         <a className={s.logoWrapper} href="/">

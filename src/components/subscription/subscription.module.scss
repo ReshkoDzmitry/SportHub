@@ -1,8 +1,8 @@
 @import "src/common/variables";
 @import "src/common/exends";
 
-.container {
-  width: 1400px;
+.subscriptionContainer {
+  max-width: 1400px;
   margin: 0 auto;
 
   .socialSubscriptionWrapper {
@@ -94,8 +94,8 @@
 
 
 @media(max-width: 1440px) {
-  .container {
-    width: 768px;
+  .subscriptionContainer {
+    max-width: 768px;
     margin: 0 auto;
 
     .socialSubscriptionWrapper {
@@ -104,7 +104,7 @@
       .socialWrapper {
 
         .social {
-          width: 505px;
+          max-width: 505px;
           height: 180px;
 
           .socialIconItems {
@@ -140,8 +140,8 @@
 
 
 @media(max-width: 320px) {
-  .container {
-    width: 320px;
+  .subscriptionContainer {
+    max-width: 320px;
     margin: 0 auto;
 
     .socialSubscriptionWrapper {
