@@ -9,11 +9,12 @@ const NewsCard = () => {
     const newsDate = news.filter(el => el.data === '09.07.19');
 
     return (
+
         <div className={s.newsCardWrapper}>
             {
                 news.map(m => {
                     return (
-                        <a href="#" className={s.newsCard} key={m.id}>
+                        <a href="/" className={s.newsCard} key={m.id}>
                             <div className={s.newsCardImageBlock}>
                                 <div className={s.newsCardImageWrapper}>
                                     <img className={s.newsCardImage} src={m.image} alt={m.alt}/>
@@ -32,8 +33,6 @@ const NewsCard = () => {
                 <OpinionCard/>
             </div>
 
-
-            <div className={s.newsCardWrapper}>
                 {
                     newsDate.map(m => {
                         return (
@@ -52,9 +51,9 @@ const NewsCard = () => {
                         )
                     })
                 }
-            </div>
         </div>
     )
+
 }
 
 export default NewsCard;
