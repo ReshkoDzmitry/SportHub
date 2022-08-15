@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sportHub/static/css/main.721cd57a.css",
+    "main.css": "/sportHub/static/css/main.fd608276.css",
     "main.js": "/sportHub/static/js/main.65b0530b.js",
     "static/js/787.dbc4fe02.chunk.js": "/sportHub/static/js/787.dbc4fe02.chunk.js",
     "static/media/header.png": "/sportHub/static/media/header.c645a5113ed141ab327e.png",
@@ -13,12 +13,12 @@
     "static/media/people01.png": "/sportHub/static/media/people01.2f0788fe516137f5c9e1.png",
     "static/media/people03.png": "/sportHub/static/media/people03.11a9599213eb0eef3227.png",
     "index.html": "/sportHub/index.html",
-    "main.721cd57a.css.map": "/sportHub/static/css/main.721cd57a.css.map",
+    "main.fd608276.css.map": "/sportHub/static/css/main.fd608276.css.map",
     "main.65b0530b.js.map": "/sportHub/static/js/main.65b0530b.js.map",
     "787.dbc4fe02.chunk.js.map": "/sportHub/static/js/787.dbc4fe02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.721cd57a.css",
+    "static/css/main.fd608276.css",
     "static/js/main.65b0530b.js"
   ]
 }
