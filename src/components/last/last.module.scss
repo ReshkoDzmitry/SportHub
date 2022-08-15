@@ -18,6 +18,7 @@
   .lastContainer {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 5px;
 
     .titleWrapper {
       h3 {
@@ -32,6 +33,12 @@
   .lastContainer {
     max-width: 320px;
     margin: 0 auto;
+    padding: 0;
+
+    .lastNewsCardWrapper {
+      justify-content: space-around
+    }
+
 
     .titleWrapper {
 

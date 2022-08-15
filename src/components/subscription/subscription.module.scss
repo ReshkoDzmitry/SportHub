@@ -4,6 +4,7 @@
 .subscriptionContainer {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 10px;
 
   .socialSubscriptionWrapper {
     display: flex;
@@ -97,6 +98,7 @@
   .subscriptionContainer {
     max-width: 768px;
     margin: 0 auto;
+    padding: 0 10px;
 
     .socialSubscriptionWrapper {
       justify-content: space-around;
@@ -143,6 +145,7 @@
   .subscriptionContainer {
     max-width: 320px;
     margin: 0 auto;
+    padding: 0;
 
     .socialSubscriptionWrapper {
       justify-content: space-around;
@@ -154,9 +157,8 @@
           padding-left: 10px;
         }
 
-
         .social {
-          width: 320px;
+          width: 290px;
           height: 180px;
           flex-wrap: wrap;
           align-content: center;
@@ -165,7 +167,7 @@
             margin: 0;
 
             .socialIcon {
-              margin: 18px 18px;
+              margin: 18px;
             }
           }
         }
@@ -178,7 +180,7 @@
         }
 
         .subscription {
-          width: 320px;
+          width: 290px;
           height: 180px;
           background-color: black;
           display: flex;
